@@ -1,3 +1,37 @@
 site_name: CSA_Wiki
+copyright: Copyright &copy; 2023 - 2025 中国民航大学网络安全协会
 theme:
   name: material
+  logo: images/csa_logo.png
+  features:
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+extra:
+  version:
+    provider: mike
+nav:
+  - 首页: index.md
+  - 技术文档:
+      - 指南: tech/guide.md
+      - API: tech/api.md
+      - 部署: tech/deployment.md
