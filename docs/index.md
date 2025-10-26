@@ -16,7 +16,7 @@
 
 步骤：
 
-1. 首次克隆`git clone https://github.com/CAUC-CSA/CSA_Wiki.git`
+1. 首次克隆`git clone https://github.com/CAUC-CSA/CAUC-CSA.github.io.git`
 
 2. 每次添加前获取最新主分支，并新建工作分支
 
