@@ -23,17 +23,17 @@
    ```bash
    git checkout main 
    git pull origin main
-   git checkout -b my-work-branch
+   git checkout -b <your-work-branch>
    ```
 
 3. 在docs下编写文档...
 
-4. 提交更改
+4. 提交更改（其中git commit -m 只能写标题 不加-m的话就能进编译器写 commit title 和 commit message）
 
    ```bash
    git add .
    git commit -m "更新文档描述"
-   git push origin my-work-branch
+   git push origin <your-work-branch>
    ```
 
 5. 在 GitHub 网站创建 Pull Request
