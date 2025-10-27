@@ -1,0 +1,29 @@
+# macOS specific files (系统文件)
+.DS_Store
+**/.DS_Store
+
+# Windows specific files (Windows 系统文件)
+Thumbs.db
+ehthumbs.db
+
+# MkDocs build output directory (MkDocs 构建输出)
+# 这是MkDocs生成静态网站的目录，不应该被版本控制。
+site/
+
+# Python environment & cache files (Python 环境和缓存文件)
+# MkDocs基于Python，这些是常见的Python项目需要忽略的。
+__pycache__/
+*.pyc
+*.pyd
+*.pyo
+venv/
+env/
+.Python
+.venv/
+
+# Editor/IDE specific files (编辑器/IDE 特定文件)
+# 不同的编辑器或IDE会生成自己的配置文件或缓存文件
+.idea/                          # IntelliJ IDEA
+.vscode/                        # Visual Studio Code
+*.swp                           # Vim swap files
+*~                              # Emacs backup files
