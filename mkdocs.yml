@@ -44,6 +44,8 @@ markdown_extensions:
   - tables
   - pymdownx.tabbed:
       alternate_style: true
+plugins:
+  - include-markdown
 # 导航栏配置
 nav:
   - 首页: index.md
