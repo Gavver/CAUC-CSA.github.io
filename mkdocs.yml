@@ -1,10 +1,14 @@
 site_name: CSA_Wiki
 copyright: Copyright &copy; 2023 - 2025 中国民航大学网络安全协会
+site_description: 驯海路隔壁白帽子
+site_author: 中国民航大学网络安全协会
 theme:
   name: material
   logo: images/csa_logo.png
   features:
-    - content.code.copy
+    - content.code.copy # 代码块复制按钮
+    - navigation.tabs # 启用导航栏标签页
+  # 配置浅色和深色模式
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -40,12 +44,9 @@ markdown_extensions:
   - tables
   - pymdownx.tabbed:
       alternate_style: true
-extra:
-  version:
-    provider: mike
+# 导航栏配置
 nav:
   - 首页: index.md
-  - 技术文档:
-      - 指南: tech/guide.md
-      - API: tech/api.md
-      - 部署: tech/deployment.md
+  - wiki建设:
+      - 提交规范: contributing/contributing.md
+      - 撰写规范: contributing/writing.md
