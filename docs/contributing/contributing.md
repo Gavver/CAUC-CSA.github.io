@@ -18,14 +18,14 @@
 
 2. 每次添加前获取最新主分支，并新建工作分支
    ```bash
-   git checkout main 
-   git pull origin main
+   git checkout master 
+   git pull origin master
    git checkout -b <your-work-branch>
    ```
 
 3. 在docs下编写文档，强烈建议在本地构建，确认页面无误后再提交，请阅读[编写指南](writing.md)
 
-4. 提交更改（其中git commit -m 只能写标题 不加-m的话就能进编译器写 commit title 和 commit message）
+4. 提交更改（其中 git commit -m 只能写标题 不加 -m 的话就能进编辑器写 commit title 和 commit message）
    ```bash
    git add .
    git commit -m "更新文档描述"
@@ -33,10 +33,10 @@
 
 5. 同步最新代码
    ```bash
-   git checkout main
-   git pull origin main
+   git checkout master
+   git pull origin master
    git checkout <your-work-branch>
-   git merge main
+   git merge master
    ```
    解决冲突（如果有的话）
 
