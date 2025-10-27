@@ -9,7 +9,7 @@
 
 - 请首先学习git基础知识。
 - 本项目基于 mkdocs-material 项目结构请查阅[mkdocs官方文档](https://mkdocs.org.cn/)和[mkdocs-material官方文档](https://squidfunk.github.io/mkdocs-material/)，请务必首先阅读文档再进行提交。
-- 本项目文档均在 docs 目录下编写，编写完成后推送至 master 分支，CI 将自动编译并更新页面。
+- 本项目文档均在 docs 目录下编写，编写完成后通过 Pull Request 合并至 master 分支，CI 将自动编译并更新页面。
 - 对于组件使用，可以依据本项目已有文章中的格式进行编写。
 
 ## 提交步骤
