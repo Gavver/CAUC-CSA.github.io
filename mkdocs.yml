@@ -46,9 +46,12 @@ markdown_extensions:
       alternate_style: true
 plugins:
   - include-markdown
+  - search
 # 导航栏配置
 nav:
   - 首页: index.md
+  - 培训资料&&教程集合:
+      - 01_VMWare虚拟机的安装与使用: training/25-10-31VMWareWorkstationPro/index.md
   - wiki建设:
       - 提交规范: contributing/contributing.md
       - 撰写规范: contributing/writing.md
