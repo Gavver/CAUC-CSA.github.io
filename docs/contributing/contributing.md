@@ -36,18 +36,7 @@
    git commit -m "更新文档描述"
    ```
 
-5. 同步最新代码（建议使用 rebase 保持线性历史）
-   ```bash
-   git fetch origin
-   git rebase origin/master
-   ```
-   如果遇到冲突，解决后执行：
-   ```bash
-   git add .
-   git rebase --continue
-   ```
-
-6. 推送至远程仓库
+5. 推送至远程仓库
    ```bash
    # 首次推送
    git push origin <your-work-branch>
@@ -56,7 +45,7 @@
    git push --force-with-lease origin <your-work-branch>
    ```
 
-7. 在 GitHub 网站创建 Pull Request
+6. 在 GitHub 网站创建 Pull Request
 
 ### 方式二：Fork 后提交
 
