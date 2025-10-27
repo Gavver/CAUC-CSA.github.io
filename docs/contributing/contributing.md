@@ -35,7 +35,7 @@
    ```bash
    git checkout main
    git pull origin main
-   git checkout dev
+   git checkout <your-work-branch>
    git merge main
    ```
    解决冲突（如果有的话）
