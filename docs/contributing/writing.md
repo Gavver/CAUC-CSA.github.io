@@ -27,8 +27,8 @@
 
 ## 一些建议
 
-1. 对于内链使用`[]()`格式即可，对于外链，尤其是希望新标签页打开的链接，建议使用html格式：
+1. 对于内链使用`[]()`格式即可，对于希望新标签页打开的链接则需在链接后添加`{target="_blank"}`:
    ```markdown
-   <a href="https://example.com" target="_blank">点击这里在新窗口中打开链接</a>
+   [点击这里在新窗口中打开链接](https://example.com){target="_blank"}
    ```
-   from N0rth5ea in 2025-10-27
+   from N0rth5ea in 2025-10-28
