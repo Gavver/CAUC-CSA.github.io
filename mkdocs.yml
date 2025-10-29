@@ -118,7 +118,7 @@ nav:
   - CTF技能树:
       - Introduction: ctf/ctf_index.md
       - Web: 
-        - xxx: ctf/web/web.md
+        - Introduction: ctf/web/web.md
       - Crypto:
         - xxx: ctf/crypto/crypto.md
       - Pwn:
