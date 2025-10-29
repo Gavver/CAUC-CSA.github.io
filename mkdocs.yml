@@ -9,7 +9,7 @@ repo_url: https://github.com/CAUC-CSA/CAUC-CSA.github.io
 edit_uri: edit/master/docs/
 
 extra_javascript:
-  - https://cdn.jsdelivr.net/npm/pangu@7.2.0/dist/browser/pangu.umd.js
+  - https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.js
   - javascripts/pangu-init.js
 
 theme:
@@ -22,7 +22,6 @@ theme:
     - content.code.annotate           # 代码注释
     - content.code.copy               # 代码块复制按钮
     - navigation.footer               # 页脚上下页导航
-    - navigation.instant              # 即时加载
     - navigation.instant.progress     # 加载进度条
     - navigation.tabs                 # 导航栏标签页
     - navigation.tabs.sticky          # 粘性标签页
