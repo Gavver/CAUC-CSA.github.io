@@ -155,29 +155,29 @@ docker --version
    - 你会看到一个 JSON 配置文件编辑器
 
 3. **添加镜像源配置** 
-   - 在 JSON 配置中添加 `registry-mirrors` 字段
-   - 完整的配置应该类似这样：
-
-   ```json
-   {
-     "builder": {
-       "gc": {
-         "defaultKeepStorage": "20GB",
-         "enabled": true
-       }
-     },
-     "experimental": false,
-     "registry-mirrors": [
-       "https://docker.mirrors.ustc.edu.cn",
-       "https://hub-mirror.c.163.com",
-       "https://mirror.ccs.tencentyun.com",
-       "https://docker.xuanyuan.me"
-     ]
-   }
-   ```
+    - 在 JSON 配置中添加 `registry-mirrors` 字段
+    - 完整的配置应该类似这样：
+ 
+    ```json
+    {
+      "builder": {
+        "gc": {
+          "defaultKeepStorage": "20GB",
+          "enabled": true
+        }
+      },
+      "experimental": false,
+      "registry-mirrors": [
+        "https://docker.mirrors.ustc.edu.cn",
+        "https://hub-mirror.c.163.com",
+        "https://mirror.ccs.tencentyun.com",
+        "https://docker.xuanyuan.me"
+      ]
+    }
+    ```
    
-   !!! note "注意"
-       如果配置文件中已经有其他字段，只需要添加或修改 `registry-mirrors` 部分即可。
+    !!! note "注意"
+        如果配置文件中已经有其他字段，只需要添加或修改 `registry-mirrors` 部分即可。
 
 4. **点击 Apply & Restart** 
    - 配置会自动保存，Docker Desktop 会自动重启以应用新配置
@@ -514,6 +514,7 @@ networks:
 ```bash
 docker run -m 512m --cpus="0.5" ubuntu
 ```
+
 - `-m` 限制内存
 - `--cpus` 限制 CPU 使用率
 

@@ -19,16 +19,30 @@
 3. 在mkdocs.yml最下方nav目录适当位置加入新页面，在docs目录下创建对应markdown文件
 
 4. 本地构建运行
-   ```bash
-   mkdocs serve
-   ```
+    ```bash
+    mkdocs serve --livereload
+    ```
 
 5. 浏览器访问 http://127.0.0.1:8000/
 
 ## 一些建议
 
-1. 对于内链使用`[]()`格式即可，对于希望新标签页打开的链接则需在链接后添加`{target="_blank"}`:
-   ```markdown
-   [点击这里在新窗口中打开链接](https://example.com){target="_blank"}
-   ```
-   from N0rth5ea in 2025-10-28
+1. 对于内链使用`[]()`格式即可，对于希望新标签页打开的链接则需在链接后添加`{target="_blank" rel="noopener"}`，例如：
+    ```markdown
+    [点击这里在新窗口中打开链接](https://example.com){target="_blank" rel="noopener"}
+    ```
+    from N0rth5ea in 2025-10-28
+2. 本页跳转时，锚点的使用和md不一致，建议本地运行后点击锚点，通过url的显示设置锚点。
+    </br>例如：url为`http://127.0.0.1:8000/contributing/writing/#_3`
+    </br>本页面为`docs/contributing/writing.md`，锚点为`#_3`，则对应跳转声明是：
+    ```markdown
+    [跳转到3. 编写步骤](#_3)
+    ```
+    忽略pycharm等报错`无法解析定位标记 _3`，因为mkdocs对锚点的处理与md不一致，实际跳转是可行的。
+    </br>from N0rth5ea in 2025-10-28
+3. 有些md编辑器会导致缩进为3个空格，导致解析异常，如果发现页面显示不理想可以检查是否缩进问题。
+    </br>也可以使用正则表达式替换所有3个空格为4个空格。（推荐工具Notepad3）
+    ```regex
+    ^\s{3}(?!\s)
+    ```
+    </br>from N0rth5ea in 2025-10-28
