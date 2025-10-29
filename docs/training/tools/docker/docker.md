@@ -636,7 +636,7 @@ node_modules
 
  **下一步该做什么？** 
 
-1. **多实践！** 尝试把自己的项目容器化
+1. **多实践！** 尝试手搓一个项目！然后把它扔到docker里面！
 2. **学习 Kubernetes** （如果你想搞大规模部署）（当然，关于CTF_WEB的相关docker知识点你是一点都不缺了）
 3. **阅读官方文档** [docs.docker.com](https://docs.docker.com){target="_blank"}
 
@@ -653,5 +653,5 @@ node_modules
 
 *编写日期：2025-10-28*  
 *适用对象：Docker 零基础小白（应该也包括你）*  
-*作者：ARC*  
+*作者：Dawn_ARC*  
 *如有疑问，请移步 **互联网** 或向你身边的大佬求救*
