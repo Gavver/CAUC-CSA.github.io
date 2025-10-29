@@ -22,6 +22,7 @@ theme:
     - content.code.annotate           # 代码注释
     - content.code.copy               # 代码块复制按钮
     - navigation.footer               # 页脚上下页导航
+    - navigation.instant              # 即时加载
     - navigation.instant.progress     # 加载进度条
     - navigation.tabs                 # 导航栏标签页
     - navigation.tabs.sticky          # 粘性标签页
@@ -84,6 +85,7 @@ markdown_extensions:
       pygments_lang_class: true
       auto_title: true
       linenums: true
+  - pymdownx.blocks.caption
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.smartsymbols
