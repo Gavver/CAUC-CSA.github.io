@@ -8,6 +8,10 @@ repo_name: CAUC-CSA/CAUC-CSA.github.io
 repo_url: https://github.com/CAUC-CSA/CAUC-CSA.github.io
 edit_uri: edit/master/docs/
 
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/pangu@7.2.0/dist/browser/pangu.umd.js
+  - javascripts/pangu-init.js
+
 theme:
   name: material
   language: zh
