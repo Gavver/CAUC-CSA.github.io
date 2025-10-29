@@ -127,37 +127,37 @@ Burp Suite 是一个常用的中间人代理，用来拦截、修改和重发 HT
 
 1. 配置好Burp后，在 Burp 中启用拦截：
 
-   ![image-20251030014725823](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030014725823.png)
+    ![image-20251030014725823](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030014725823.png)
 
 2. 在浏览器配置好代理后，访问百度
 
-   ![image-20251030014917708](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030014917708.png)
+    ![image-20251030014917708](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030014917708.png)
 
 3. 查看请求（不同版本burp显示可能不同）
 
-   ![image-20251030015034917](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030015034917.png)
+    ![image-20251030015034917](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030015034917.png)
 
-   在其中可以看到，我们发起了一个GET请求，访问了www.baidu.com这个域名的根目录
+    在其中可以看到，我们发起了一个GET请求，访问了www.baidu.com这个域名的根目录
 
 4. 查看返回
 
-   在burp中有两种最常用的方法来查看响应包
+    在burp中有两种最常用的方法来查看响应包
 
-   （1）在proxy模块的intercept中：鼠标右键->Do intercept->Response to this request
+    （1）在proxy模块的intercept中：鼠标右键->Do intercept->Response to this request
 
-   ![image-20251030023015093](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030023015093.png)
+    ![image-20251030023015093](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030023015093.png)
 
-   获得响应包，但这种方式只能单次查看，只要放掉这个包，无法再查看
+    获得响应包，但这种方式只能单次查看，只要放掉这个包，无法再查看
 
-   ![image-20251030023234326](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030023234326.png)
+    ![image-20251030023234326](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030023234326.png)
 
-   （2）把请求包发送到repeater模块
+    （2）把请求包发送到repeater模块
 
-   ![image-20251030024605849](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030024605849.png)
+    ![image-20251030024605849](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030024605849.png)
 
-   然后在repeater模块中，可以多次改数据包查看不同的相应包
+    然后在repeater模块中，可以多次改数据包查看不同的相应包
 
-   ![image-20251030024645116](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030024645116.png)
+    ![image-20251030024645116](https://mac-pic-1314279731.cos.ap-nanjing.myqcloud.com/image-20251030024645116.png)
 
 ### 07 小总结
 
