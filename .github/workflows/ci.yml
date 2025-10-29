@@ -18,6 +18,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Normalize Markdown leading indent
+        run: |
+          find . -type f -name '*.md' -print0 \
+            | xargs -0 -r perl -i -pe 's/^\s{3}(?!\s)/    /'
+      
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
