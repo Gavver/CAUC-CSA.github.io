@@ -12,6 +12,8 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -22,7 +24,7 @@ jobs:
         run: |
           find . -type f -name '*.md' -print0 \
             | xargs -0 -r perl -i -pe 's/^\s{3}(?!\s)/    /'
-      
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
