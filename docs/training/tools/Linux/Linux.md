@@ -4,7 +4,7 @@
 
 虚拟机乌邦图（Ubuntu）的安装
 
-Markdown 的使用（下载Typora、用法在网页https://www.toolhelper.cn/Code/Markdown）
+md的使用（下载Typora、用法在网页https://www.toolhelper.cn/Code/Markdown）
 
 善用网络资料：CSDN，github
 
@@ -19,7 +19,6 @@ Markdown 的使用（下载Typora、用法在网页https://www.toolhelper.cn/Cod
 `shutdown -h now`关机————【命令】【选项】【参数】
 
 `命令 -h ` 或`命令 --help`  →显示这个命令的“说明书”
-> -h 不全是 --help 的缩写，第一次查看建议还是使用 --help
 
 `↑`前一条指令
 
@@ -31,7 +30,7 @@ Markdown 的使用（下载Typora、用法在网页https://www.toolhelper.cn/Cod
 
 ### 用户
 
-我们可以使用不同身份登录进linux系统，user（用户）与root（类似于管理员）的权限不同，可以进行的操作相应地有所不同。
+我们可以使用不同身份登录进linux系统，user（用户）与root（超级管理员）的权限不同，可以进行的操作相应地有所不同。
 
 退出、登录的指令：
 
@@ -41,9 +40,7 @@ Markdown 的使用（下载Typora、用法在网页https://www.toolhelper.cn/Cod
 
 ### 权限
 
-那么相应地，我们介绍到**权限**。
-
-![rwx.png](rwx.png)
+那么相应地，我们介绍到**权限**。![rwx.png](rwx.png)
 
 >前三个为属主位：创建该文件者或被指定的文件的所属者
 >
@@ -51,51 +48,43 @@ Markdown 的使用（下载Typora、用法在网页https://www.toolhelper.cn/Cod
 >
 >最后三个Other位：Other用户，即不属于主又不在属组的用户
 
-#### r:读权限
-- 对文件，可以使用类似cat等命令查看文件内容
-- 可以对此目录执行ls以列出内部的所有文件
+r:读权限          对文件，可以使用类似cat等命令查看文件内容	可以对此目录执行ls以列出内部的所有文件
 
-#### w:写权限
-- 对文件，可以编辑或删除此文件
-- 可以在此目录创建文件
+w:写权限          对文件，可以编辑或删除此文件	可以在此目录创建文件：
 
-#### x:执行权限
-- 对文件，可以在命令提示符下当做命令提交给内核运行
-- 可以使用cd切换进此目录，也可以使用ls -l查看内部文件的详细信息
+x:执行权限	对文件，可以在命令提示符下当做命令提交给内核运行	可以使用cd切换进此目录，也可以使用ls -l查看内部文件的详细信息
 
 ### 文件夹（目录）✨
 
-![directory.png](directory.png)
-
+![directory](E:\Git\CAUC-CSA.github.io\docs\training\tools\Linux\directory.png)
 
 `ls`	→当前目录下的文件（夹），简洁版
 
 `ll`	→当前目录下的文件（夹），详细版
-> `ll` 不是每个发行版都有的命令，它其实是 `ls -l` 的 alias
 
-`cd <directory name>`	→进入文件夹
+`cd 文件夹名`	→进入文件夹
 
-`cd ..`	→返回上一个文件夹
+`cd ..`	→退出当前文件夹
 
-`cd`	→返回家目录
+`cd`	→退出全部文件夹
 
 `pwd`	→显示路径
 
-`echo $PATH`	→查看当前环境变量
+`echo $PATH`	→查看当前环境变量（环境变量是系统或软件设置的参数，用于存储系统运行所需的信息，如用户信息、路径信息等，具有全局属性，可被子进程继承）
 
-`rm <filename>`	→删除文件
+cp	→复制目录 `cp -r 来源 目标`
 
-`rm -r <directory name>`	→删除文件夹，慎用！
+`mv 待操作文件名 目标文件（夹）名`	→重命名、移动文件（自学尝试时可先用下述vim或nano指令新建文件，再将其重命名、移动，以免误伤有用文件）
 
-![rm help](rmhelp.png)
+`rm 文件名`	→删除文件（自学尝试时可先用下述vim或nano指令新建文件，再将其删除，以免误删有用文件）
 
-mv 	→重命名、移动文件
+`rm -r`	→删除文件夹，慎用！（自学尝试时可先用上述从cp指令复制文件夹，再试用此指令将其删除，以免误删有用文件夹）
 
-cp	→复制目录 `cp 来源 目标`
+![rmhelp](rmhelp.png)
 
 ### 文件✨
 
-`cat <filename>`	→查看文件内容
+`cat 文件名`	→查看文件内容
 
 以下两个是编辑指令
 
@@ -124,32 +113,28 @@ cp	→复制目录 `cp 来源 目标`
 **nano**
 
 ![edit](edit.png)
-
 编译过后按下Ctrl+X退出会提示是否保存文件
-
-![after edit](afteredit.png)
-
+![在这里插入图片描述](exit.png)
 N则直接退出，Y则进一步选择文件类型（M代表Alt键），若直接保存则按下enter键
-
-![exit](exit.png)
+![在这里插入图片描述](afteredit.png)
 
 ### 安装卸载✨
 
-`sudo apt install 软件名`	→安装
+`sudo apt-get install 软件名`	→安装
 
-`sudo apt remove 软件名`	→卸载
+`sudo apt-get remove 软件名`	→卸载
 
-> e.g. vim
+> eg.vim
 
 >在线安装
 >
->sudo apt update：更新软件源
+>sudo apt-get update：更新软件源
 >
->sudo apt install vim：安装vim，这里的vim可以换成其他程序
+>sudo apt-get install vim：安装vim，这里的vim可以换成其他程序
 >
 >卸载程序
 >
->sudo apt remove (vim)：卸载vim，这里的vim可以换成其他程序
+>sudo apt-get remove (vim)：卸载vim，这里的vim可以换成其他程序
 
 （可以在下载具体某个东西的时候查CSDN）
 
