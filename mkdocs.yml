@@ -133,7 +133,7 @@ nav:
       - Introduction: ctf/ctf_index.md
       - Web: 
         - Introduction: ctf/web/web.md
-        - Web中你需要知道的计网知识: ctf/web/network_in_web/Web中你需要知道的计网知识.md
+        - Web中你需要知道的计网知识: ctf/web/network_in_web/network_in_web.md
       - Crypto:
         - xxx: ctf/crypto/crypto.md
       - Pwn:
