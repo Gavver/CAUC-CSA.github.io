@@ -4,7 +4,7 @@
 
 虚拟机乌邦图（Ubuntu）的安装
 
-md的使用（下载Typora、用法在网页https://www.toolhelper.cn/Code/Markdown）
+Markdown 的使用（下载Typora、用法在网页https://www.toolhelper.cn/Code/Markdown）
 
 善用网络资料：CSDN，github
 
@@ -19,6 +19,7 @@ md的使用（下载Typora、用法在网页https://www.toolhelper.cn/Code/Markd
 `shutdown -h now`关机————【命令】【选项】【参数】
 
 `命令 -h ` 或`命令 --help`  →显示这个命令的“说明书”
+> -h 不全是 --help 的缩写，第一次查看建议还是使用 --help
 
 `↑`前一条指令
 
@@ -40,7 +41,9 @@ md的使用（下载Typora、用法在网页https://www.toolhelper.cn/Code/Markd
 
 ### 权限
 
-那么相应地，我们介绍到**权限**。![1.png](1.png)
+那么相应地，我们介绍到**权限**。
+
+![rwx.png](rwx.png)
 
 >前三个为属主位：创建该文件者或被指定的文件的所属者
 >
@@ -48,35 +51,43 @@ md的使用（下载Typora、用法在网页https://www.toolhelper.cn/Code/Markd
 >
 >最后三个Other位：Other用户，即不属于主又不在属组的用户
 
-r:读权限          对文件，可以使用类似cat等命令查看文件内容	可以对此目录执行ls以列出内部的所有文件
+#### r:读权限
+- 对文件，可以使用类似cat等命令查看文件内容
+- 可以对此目录执行ls以列出内部的所有文件
 
-w:写权限          对文件，可以编辑或删除此文件	可以在此目录创建文件：
+#### w:写权限
+- 对文件，可以编辑或删除此文件
+- 可以在此目录创建文件
 
-x:执行权限	对文件，可以在命令提示符下当做命令提交给内核运行	可以使用cd切换进此目录，也可以使用ls -l查看内部文件的详细信息
+#### x:执行权限
+- 对文件，可以在命令提示符下当做命令提交给内核运行
+- 可以使用cd切换进此目录，也可以使用ls -l查看内部文件的详细信息
 
 ### 文件夹（目录）✨
 
-![![img.png](2.png)
-
+![directory.png](directory.png)
 
 
 `ls`	→当前目录下的文件（夹），简洁版
 
 `ll`	→当前目录下的文件（夹），详细版
+> `ll` 不是每个发行版都有的命令，它其实是 `ls -l` 的 alias
 
-`cd 文件夹名`	→进入文件夹
+`cd <directory name>`	→进入文件夹
 
-`cd ..`	→退出当前文件夹
+`cd ..`	→返回上一个文件夹
 
-`cd`	→退出全部文件夹
+`cd`	→返回家目录
 
 `pwd`	→显示路径
 
 `echo $PATH`	→查看当前环境变量
 
-`rm 文件名`	→删除文件
+`rm <filename>`	→删除文件
 
-`rm -r`	→删除文件夹，慎用！![image-20251030083753917](3.png)
+`rm -r <directory name>`	→删除文件夹，慎用！
+
+![rm help](rmhelp.png)
 
 mv 	→重命名、移动文件
 
@@ -84,7 +95,7 @@ cp	→复制目录 `cp 来源 目标`
 
 ### 文件✨
 
-`cat 文件名`	→查看文件内容
+`cat <filename>`	→查看文件内容
 
 以下两个是编辑指令
 
@@ -112,29 +123,33 @@ cp	→复制目录 `cp 来源 目标`
 
 **nano**
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/7d46bef93b5182e05ec7c5760e6f10a8.png)
+![edit](edit.png)
+
 编译过后按下Ctrl+X退出会提示是否保存文件
-![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/84c5f2d77933824537e93424cd6c5a57.png)
+
+![after edit](afteredit.png)
+
 N则直接退出，Y则进一步选择文件类型（M代表Alt键），若直接保存则按下enter键
-![在这里插入图片描述](https://i-blog.csdnimg.cn/blog_migrate/50d011fdb3ef0ade12b75dc64db443ed.png)
+
+![exit](exit.png)
 
 ### 安装卸载✨
 
-`sudo apt-get install 软件名`	→安装
+`sudo apt install 软件名`	→安装
 
-`sudo apt-get remove 软件名`	→卸载
+`sudo apt remove 软件名`	→卸载
 
-> eg.vim
+> e.g. vim
 
 >在线安装
 >
->sudo apt-get update：更新软件源
+>sudo apt update：更新软件源
 >
->sudo apt-get install vim：安装vim，这里的vim可以换成其他程序
+>sudo apt install vim：安装vim，这里的vim可以换成其他程序
 >
 >卸载程序
 >
->sudo apt-get remove (vim)：卸载vim，这里的vim可以换成其他程序
+>sudo apt remove (vim)：卸载vim，这里的vim可以换成其他程序
 
 （可以在下载具体某个东西的时候查CSDN）
 
