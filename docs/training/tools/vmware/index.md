@@ -58,7 +58,7 @@
 下载链接，无论什么系统，你的目标是一个iso文件，大小一般是几到十几GB:
 === "ubuntu 清华源镜像"
     [https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/](https://mirrors.tuna.tsinghua.edu.cn/ubuntu-releases/){target="_blank"}
-    </br>比较好用的版本：2204、2404
+    </br>比较好用的版本：2204、2404，初学者建议下桌面"desktop"版本而不是服务"server"版本。
 === "Kali 官方"
     [https://www.kali.org/get-kali/#kali-installer-images](https://www.kali.org/get-kali/#kali-installer-images){target="_blank"}
 
