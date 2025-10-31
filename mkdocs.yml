@@ -125,8 +125,9 @@ nav:
       - CTF是什么: training/what-is-ctf.md
       - 环境与工具准备: 
         - 01_VMWare虚拟机的安装: training/tools/vmware/index.md
-        - 02_Docker超绝入门指南: training/tools/docker/docker.md
-        - 03_Python安装与基础配置: training/tools/python/python.md
+        - 02_Linux指令入门: training/tools/Linux/Linux.md
+        - 03_Docker超绝入门指南: training/tools/docker/docker.md
+        - 04_Python安装与基础配置: training/tools/python/python.md
       - 靶场推荐: training/lab.md
   - CTF技能树:
       - Introduction: ctf/ctf_index.md
